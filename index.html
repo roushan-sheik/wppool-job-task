@@ -18,20 +18,20 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="bg-[#EDEDED] p-6">
   <!-- Header Section  -->
   <header class="main_container hero_section relative">
     <nav class="pt-6 px-6  ">
       <div class="navbar  ">
         <!-- logo box  -->
-        <div class="flex-1  ">
+        <div class="flex-1 cursor-pointer  ">
           <img class="logo" src="./images/logo.png" alt="">
         </div>
         <div class="flex-none">
           <div class="flex  items-center gap-6">
             <div class="w-12 h-12 border-2 border-white rounded-full flex justify-center items-center ">
-              <!-- <i class="fa-solid fa-share-nodes text-white text-2xl"></i> -->
-              <img src="./images/share.png" alt="">
+              <i class="fa-solid fa-share-nodes text-white text-2xl"></i>
+              <!-- <img src="./images/share.png" alt=""> -->
             </div>
             <!-- button  -->
             <button class="btn btn-outline  border-2 border-white text-white rounded-[124px] p-4">Download
@@ -62,13 +62,89 @@
     </nav>
     <!-- banner section  -->
     <section class="">
+      <div class="absolute filter_banner top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+        <img class="h-[400px]" src="./images/banner_image.png" alt="">
+      </div>
       <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-        <img src="./images/banner_image.png" alt="">
+        <img class="h-[400px]" src="./images/Rectangle 1.png" alt="">
+      </div>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+        <h1 class="text-[4.875rem] text-center text-nowrap text-white">The WPPOOL Index</h1>
+        <p class="text-white text-[21px] text-nowrap">Monitor the performance of emerging, publicly traded, functional ,
+          technology
+          companies
+        </p>
+      </div>
+      <!-- CONTENT BOX  -->
+      <div class="text-white flex gap-6 flex-col absolute left-10 bottom-10">
+        <div class="flex flex-col">
+          <h4 class="text-[36px]">60</h4>
+          <p class="text-base">Companies</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="text-[36px]">$100B</h4>
+          <p class="text-base">Market Cap</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="text-[36px]">3.5x</h4>
+          <p class="text-base">Revenue</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="text-[36px]">60%</h4>
+          <p class="text-base">LTM avg. revenue growth rate</p>
+        </div>
+      </div>
+      <div
+        class=" right-10 bottom-10 absolute shadow-2xl cursor-pointer flex w-14 h-14 justify-center items-center bg-white rounded-full">
+        <img src="./images/arrow_downward_alt.png" alt="">
       </div>
     </section>
   </header>
   <!-- Main section  -->
-  <main class="main_container"> Main
+  <main class="main_container">
+    <!-- ===================== graph section =============== -->
+    <section class="bg-white p-6 mt-[100px]">
+      <nav class=" px-6 bg-[#EDEDED] ">
+        <div class="navbar  ">
+          <!-- logo box  -->
+          <div class="flex-1 cursor-pointer  ">
+            <img class="logo" src="./images/black-logo.png" alt="">
+          </div>
+          <div class="flex-none">
+            <div class="flex  items-center gap-6">
+              <div class="w-12 h-12 border-2 border-black rounded-full flex justify-center items-center ">
+                <i class="fa-solid fa-share-nodes  text-2xl"></i>
+                <!-- <img src="./images/share.png" alt=""> -->
+              </div>
+              <!-- button  -->
+              <button class="btn btn-outline  border-2 border-black text-black rounded-[124px] p-4">Download
+                The 2024
+                Report</button>
+              <!-- bars box -->
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <!-- bar icon -->
+                  <i class="fa-solid fa-bars text-black text-4xl"></i>
+                  <!-- <img class="w-[26px] h-[10px]" src="./images/bars.png" alt=""> -->
+
+                </div>
+                <ul tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
   </main>
 
   <!-- footer section start -->

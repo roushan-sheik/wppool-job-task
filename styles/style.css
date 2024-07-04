@@ -44,5 +44,9 @@ body {
 ===========================================================================> */
 .hero_section {
   background: #2042b6;
-  min-height: 100vh;
+  height: 100vh;
+}
+.filter_banner {
+  filter: invert(39%) sepia(10%) saturate(749%) hue-rotate(305deg)
+    brightness(96%) contrast(90%);
 }
