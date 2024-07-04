@@ -26,11 +26,12 @@ body {
   }
 }
 .brand_pri {
-  color: #1dd100;
+  color: #2042b6;
 }
-.brand_sec {
-  color: rgb(3, 7, 18);
+.bg_pri {
+  background: #2042b6;
 }
+
 .black_pri {
   color: #03071299;
 }
@@ -38,7 +39,7 @@ body {
   color: #03071299;
 }
 .black_third {
-  color: #03071299;
+  color: #647888;
 }
 /* =================> Hero section related styles ======================
 ===========================================================================> */

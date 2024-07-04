@@ -103,8 +103,8 @@
   <!-- Main section  -->
   <main class="main_container">
     <!-- ===================== graph section =============== -->
-    <section class="bg-white p-6 mt-[100px]">
-      <nav class=" px-6 bg-[#EDEDED] ">
+    <section class="bg-white p-6 mt-[100px] ">
+      <nav class="rounded-md px-6 bg-[#EDEDED] ">
         <div class="navbar  ">
           <!-- logo box  -->
           <div class="flex-1 cursor-pointer  ">
@@ -144,6 +144,109 @@
           </div>
         </div>
       </nav>
+      <!-- main graph section  -->
+      <main class="flex flex-col lg:flex-row my-6">
+        <div class="bg-[#EFF3F6] basis-[30%] cursor-pointer">
+          <div class="flex bg_pri p-4 rounded-md text-white text-[16px] items-center justify-between"><span>The
+              Index</span> <i class="fa-solid fa-minus"></i>
+          </div>
+          <div class="flex  p-4 rounded-md black_third text-[16px] items-center justify-between"><span>The
+              Index Tab 2</span> <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="flex  p-4 rounded-md black_third text-[16px] items-center justify-between"><span>The
+              Index Tab 3</span> <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="flex  p-4 rounded-md black_third text-[16px] items-center justify-between"><span>The
+              Index Tab 4</span> <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="flex  p-4 rounded-md black_third text-[16px] items-center justify-between"><span>The
+              Index Tab 5</span> <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="basis-[70%] px-6">
+          <!-- head title  -->
+          <div class="flex items-center gap-2">
+            <img src="./images/Union.png" alt="">
+            <h3 class="text-[2.25rem]">The WPPOOL Index</h3>
+          </div>
+          <!--block box parent  -->
+          <div class="grid lg:grid-cols-4 grid-cols-2 mt-2 gap-4">
+            <!-- block 1 -->
+            <div class="bg-[#F3F3F3] p-2 flex gap-1 justify-between items-center rounded-md">
+              <span class="text-[30px] text-[#FC714D]">+66.2%</span>
+              <div>
+                <div class="flex flex-col border-r-4 pr-2 border-[#FC714D]">
+                  <span>WPPOOL</span>
+                  <span>Index</span>
+                </div>
+              </div>
+            </div>
+            <!-- block 2 -->
+            <div class="bg-[#F3F3F3] p-2 flex gap-1 justify-between items-center rounded-md">
+              <span class="text-[30px] text-[#615DE3]">+26.6%</span>
+              <div>
+                <div class="flex flex-col border-r-4 pr-2 border-[#615DE3]">
+                  <span>Google</span>
+                  <span>Index</span>
+                </div>
+              </div>
+            </div>
+            <!-- block 3 -->
+            <div class="bg-[#F3F3F3] p-2 flex gap-1 justify-between items-center rounded-md">
+              <span class="text-[30px] text-[#7CA63A]">+34.1%</span>
+              <div>
+                <div class="flex flex-col  border-r-4 pr-2 border-[#7CA63A]">
+                  <span>Microsoft</span>
+                  <span>Index</span>
+                </div>
+              </div>
+            </div>
+            <!-- block 4 -->
+            <div class="bg-[#F3F3F3] p-2 flex gap-1 justify-between items-center rounded-md">
+              <span class="text-[30px] text-[#6F34A1]">+17%</span>
+              <div>
+                <div class="flex flex-col border-r-4 pr-2 border-[#6F34A1]">
+                  <span>Microsoft</span>
+                  <span>Index</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- select box  -->
+          <div class="mt-6 flex gap-4 items-center justify-between">
+            <div class="flex items-center gap-6">
+              <div class=" rounded-[140px]">
+                <select class=" bg-[#2042B6] w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
+                  <option class="" disabled selected>Sectors</option>
+                  <option>English</option>
+                  <option>Japanese</option>
+                  <option>Italian</option>
+                </select>
+              </div>
+              <div class=" rounded-[140px]">
+                <select class=" bg-[#2042B6] w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
+                  <option class="" disabled selected>Types Of IPO</option>
+                  <option>English</option>
+                  <option>Japanese</option>
+                  <option>Italian</option>
+                </select>
+              </div>
+            </div>
+            <!-- another box  -->
+            <div class="bg-[#EFF3F6] rounded-[136px]     flex justify-end ">
+              <div class="px-7 py-3">1Y</div>
+              <div class="px-7 py-3">YTD</div>
+              <div class="rounded-full text-white bg-[#2042B6]  px-7 py-3">6M</div>
+              <div class="px-7 py-3">1M</div>
+              <div class="px-7 py-3">1W</div>
+            </div>
+          </div>
+          <!-- graph box  -->
+          <div>
+            <img src="./images/graph.png" alt="">
+          </div>
+        </div>
+      </main>
     </section>
   </main>
 
@@ -151,8 +254,13 @@
   <footer>Footer</footer>
 
 
+  <!-- Chart Js linkup  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+    integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Script file linkup  -->
   <script src="./scripts/app.js"></script>
+  <script src="./scripts/chart.js"></script>
 </body>
 
 </html>
