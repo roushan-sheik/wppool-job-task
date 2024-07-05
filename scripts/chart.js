@@ -6,7 +6,7 @@ const myLineChart = new Chart(ctx, {
     datasets: [
       {
         label: "WPPOOL",
-        data: [3.3, 4.3, 70.3, 30.3, 70.3, 80.3, 90.3],
+        data: [3.3, 4.3, 70.3, 30.3, 70.3, 60.3, 95.3],
         fill: false,
         borderColor: "#FC714D",
         tension: 0.1,
@@ -27,7 +27,7 @@ const myLineChart = new Chart(ctx, {
       },
       {
         label: "Twitter Index",
-        data: [0.2, 20.2, 30.2, 40.2, 90.2, 90.2, 90.2],
+        data: [0.2, 20.2, 30.2, 40.2, 90.2, 90.2, 100],
         fill: false,
         borderColor: "#6F34A1",
         tension: 0.1,
