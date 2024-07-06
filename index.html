@@ -126,7 +126,7 @@
   <main class="main_container">
     <!-- ===================== graph section =============== -->
     <section class="bg-white p-6 mt-[100px] ">
-      <nav class="rounded-md px-6 bg-[#EDEDED] ">
+      <nav class="pt-6 px-6  ">
         <div class="navbar  ">
           <!-- logo box  -->
           <div class="flex-1 cursor-pointer  ">
@@ -134,12 +134,13 @@
           </div>
           <div class="flex-none">
             <div class="flex  items-center gap-6">
-              <div class="w-12 h-12 border-2 border-black rounded-full flex justify-center items-center ">
-                <i class="fa-solid fa-share-nodes  text-2xl"></i>
+              <div class="w-12 hidden lg:flex h-12 border-2 border-white rounded-full  justify-center items-center ">
+                <i class="fa-solid fa-share-nodes text-white text-2xl"></i>
                 <!-- <img src="./images/share.png" alt=""> -->
               </div>
               <!-- button  -->
-              <button class="btn btn-outline  border-2 border-black text-black rounded-[124px] p-4">Download
+              <button
+                class="btn hidden lg:block btn-outline  border-2 border-white text-white rounded-[124px] p-4">Download
                 The 2024
                 Report</button>
               <!-- bars box -->
@@ -151,15 +152,29 @@
 
                 </div>
                 <ul tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-[300px] p-2 shadow">
                   <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
+                    <a class="justify-between flex ">
+                      <div class="w-10 flex h-10   bg-[#AFCD80] text-white rounded-full  justify-center items-center ">
+                        <i class="fa-solid fa-share-nodes text-black text-xl"></i>
+                        <!-- <img src="./images/share.png" alt=""> -->
+                      </div>
+                      <!-- button  -->
+
+                      <span class="badge"><button
+                          class="btn btn-outline bg-[#2042B6] text-white rounded-[124px] px-3 py-1">Download
+                          The 2024
+                          Report</button></span>
                     </a>
                   </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
+                  <li class="mt-3 text-[18px]"><a>The WPPOOL Index</a></li>
+                  <li class="mt-3 text-[18px]"><a>All Companies</a></li>
+                  <li class="mt-3 text-[18px]"><a>Potential Future Listings</a></li>
+                  <li class="mt-3 text-[18px]"><a>State of USA</a></li>
+                  <li class="mt-3 text-[18px]"><a>Stories & Ideas</a></li>
+                  <li class="mt-3 text-[18px]"><a>About WPPOOL</a></li>
+                  <li class="mt-3 text-[18px]"><a>WPPOOL Portfolio Companies</a></li>
+                  <li class="mt-5 text-[21px] text-[#2042B6]"><a href="https://wppool.dev/">Visit WPPOOL</a></li>
                 </ul>
               </div>
             </div>
@@ -167,7 +182,7 @@
         </div>
       </nav>
       <!-- main graph section  -->
-      <main class="flex flex-col lg:flex-row my-6">
+      <main class="flex flex-col gap-4 lg:gap-0 lg:flex-row my-6">
         <div class="bg-[#EFF3F6] basis-[30%] cursor-pointer">
           <div class="flex bg_pri p-4 rounded-md text-white text-[16px] items-center justify-between"><span>The
               Index</span> <i class="fa-solid fa-minus"></i>
@@ -188,11 +203,11 @@
         <div class="basis-[70%] px-6">
           <!-- head title  -->
           <div class="flex items-center gap-2">
-            <img src="./images/Union.png" alt="">
-            <h3 class="text-[2.25rem]">The WPPOOL Index</h3>
+            <img class="scale-70 lg:scale-100" src="./images/Union.png" alt="">
+            <h3 class="lg:text-[2.25rem] text-2xl">The WPPOOL Index</h3>
           </div>
           <!--block box parent  -->
-          <div class="grid lg:grid-cols-4 grid-cols-2 mt-2 gap-4">
+          <div class="grid lg:grid-cols-4 grid-cols-1 lg:mt-2 mt-4 gap-4">
             <!-- block 1 -->
             <div class="bg-[#F3F3F3] p-2 flex gap-1 justify-between items-center rounded-md">
               <span class="text-[30px] text-[#FC714D]">+66.2%</span>
@@ -235,10 +250,10 @@
             </div>
           </div>
           <!-- select box  -->
-          <div class="mt-6 flex gap-4 items-center justify-between">
-            <div class="flex items-center gap-6">
+          <div class="mt-6 flex flex-col lg:flex-row gap-4 items-center justify-between">
+            <div class="flex  items-center gap-6">
               <div class=" rounded-[140px]">
-                <select class=" bg-[#2042B6] w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
+                <select class=" bg-[#2042B6] lg:w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
                   <option class="" disabled selected>Sectors</option>
                   <option>English</option>
                   <option>Japanese</option>
@@ -246,7 +261,7 @@
                 </select>
               </div>
               <div class=" rounded-[140px]">
-                <select class=" bg-[#2042B6] w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
+                <select class=" bg-[#2042B6] lg:w-[178px] text-white rounded-[140px] select select-info   max-w-xs">
                   <option class="" disabled selected>Types Of IPO</option>
                   <option>English</option>
                   <option>Japanese</option>
