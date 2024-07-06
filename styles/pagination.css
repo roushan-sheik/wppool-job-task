@@ -8,6 +8,7 @@
 .carousel {
   position: relative;
   width: 100%;
+  height: 300px !important;
   max-width: 1440px;
   overflow: hidden;
   border-radius: 10px;
@@ -44,6 +45,6 @@
   }
 
   .slide {
-    min-width: 66.67%; /* Shows 1.5 slides on small screens */
+    min-width: 77.67%; /* Shows 1.5 slides on small screens */
   }
 }

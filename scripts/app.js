@@ -1,5 +1,8 @@
+"use strict";
+// current index
 let currentSlideIndex = 0;
 
+// create a slide show function
 function showSlide(index) {
   const slides = document.querySelector(".slides");
   const totalSlides = document.querySelectorAll(".slide").length;
@@ -25,11 +28,11 @@ function showSlide(index) {
   pageButton.textContent = `${startImage} and ${endImage}`;
   totalPages.textContent = totalSlides;
 }
-
+// next slide
 function nextSlide() {
   showSlide(currentSlideIndex + 1);
 }
-
+// prev slide
 function prevSlide() {
   showSlide(currentSlideIndex - 1);
 }
