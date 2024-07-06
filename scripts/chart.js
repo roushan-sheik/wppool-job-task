@@ -9,7 +9,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 4.3, 70.3, 30.3, 70.3, 60.3, 95.3],
         fill: false,
         borderColor: "#FC714D",
-        backgroundColor: "#FC714D", // Add backgroundColor for the tooltip
+        backgroundColor: "#FC714D",
         tension: 0.1,
       },
       {
@@ -17,7 +17,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 40.3, 10.3, 40.3, 70.3, 80.3, 70.3],
         fill: false,
         borderColor: "#615DE3",
-        backgroundColor: "#615DE3", // Add backgroundColor for the tooltip
+        backgroundColor: "#615DE3",
         tension: 0.1,
       },
       {
@@ -25,7 +25,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 20.3, 40.3, 70.3, 40.3, 80.3, 90.3],
         fill: false,
         borderColor: "#AFCD80",
-        backgroundColor: "#AFCD80", // Add backgroundColor for the tooltip
+        backgroundColor: "#AFCD80",
         tension: 0.1,
       },
       {
@@ -33,13 +33,14 @@ const myLineChart = new Chart(ctx, {
         data: [0.2, 20.2, 30.2, 40.2, 90.2, 90.2, 100],
         fill: false,
         borderColor: "#6F34A1",
-        backgroundColor: "#6F34A1", // Add backgroundColor for the tooltip
+        backgroundColor: "#6F34A1",
         tension: 0.1,
       },
     ],
   },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {
         display: true,
@@ -92,10 +93,10 @@ const myLineChart = new Chart(ctx, {
     hover: {
       mode: "index",
       intersect: false,
-      animationDuration: 0, // Disable hover animation to prevent size change
+      animationDuration: 0,
     },
     animation: {
-      duration: 0, // Disable overall animation to prevent size change
+      duration: 0,
     },
   },
 });

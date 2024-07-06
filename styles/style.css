@@ -52,12 +52,7 @@ body {
   filter: invert(39%) sepia(10%) saturate(749%) hue-rotate(305deg)
     brightness(96%) contrast(90%);
 }
-.legend {
-  display: flex;
-  justify-content: center;
-  
-  margin-top: 20px;
-}
+ 
 .legend-item {
   display: flex;
   align-items: center;
@@ -68,4 +63,16 @@ body {
   height: 12px;
   display: inline-block;
   margin-right: 5px;
+}
+.chart-container {
+  position: relative;
+  width: 80%; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  margin: auto;
+}
+
+#myLineChart {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
