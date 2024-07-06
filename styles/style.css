@@ -55,6 +55,7 @@ body {
 .legend {
   display: flex;
   justify-content: center;
+  
   margin-top: 20px;
 }
 .legend-item {
