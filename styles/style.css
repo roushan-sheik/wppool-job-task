@@ -52,7 +52,7 @@ body {
   filter: invert(39%) sepia(10%) saturate(749%) hue-rotate(305deg)
     brightness(96%) contrast(90%);
 }
- 
+
 .legend-item {
   display: flex;
   align-items: center;

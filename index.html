@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
   <!-- css file linkup -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/pagination.css">
   <!-- tailwind and daisy ui link up  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -538,35 +539,46 @@
         </div>
       </div>
       <!-- slider container  -->
-      <div class="relative  lg:h-[326px] h-[400px]">
-        <div class="flex flex-col lg:flex-row absolute lg:left-[-33px] mt-2 items-center">
-          <img class="w-[500]" src="./images/slide-1.png" alt="">
-          <img class="w-[500]" src="./images/slide-2.png" alt="">
-          <img class="hidden lg:block" src="./images/slide-3.png" alt="">
-        </div>
+      <div class="relative ">
+        <section class="carousel-section">
+          <div class="carousel">
+            <div class="slides">
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+1" alt="Slide 1"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+2" alt="Slide 2"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+3" alt="Slide 3"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+4" alt="Slide 4"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+5" alt="Slide 5"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+6" alt="Slide 6"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+7" alt="Slide 7"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+8" alt="Slide 8"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+9" alt="Slide 9"></div>
+              <div class="slide"><img src="https://via.placeholder.com/300x200?text=Slide+10" alt="Slide 10"></div>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- icon box  parent -->
       <div class="mt-8 flex items-center gap-8 flex-col lg:flex-row">
         <!-- arrow box  -->
         <div class="flex items-center gap-6">
-          <div
-            class="w-[56px] h-[56px]  cursor-pointer bg-white rounded-full shadow-xl flex justify-center items-center">
+          <div onclick="prevSlide()"
+            class="prev-button w-[56px] h-[56px]  cursor-pointer bg-white rounded-full shadow-xl flex justify-center items-center">
             <i class="fa-solid fa-arrow-left"></i>
           </div>
-          <div
-            class="w-[56px] h-[56px] cursor-pointer bg-white rounded-full shadow-xl flex justify-center items-center">
+          <div onclick="nextSlide()"
+            class="next-button w-[56px] h-[56px] cursor-pointer bg-white rounded-full shadow-xl flex justify-center items-center">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
-
         </div>
+        <!-- arrow btn end  -->
         <div class="flex items-center gap-2">
           <span class="text-black">Page</span>
           <div
             class="btn shadow-xl lg:w-[120px]  w-[100px] flex lg:h-[58px] h-[40] items-center justify-between gap-2 rounded-[124px] text-black bg-[#fff]">
-            <span class=" ">1 and 2</span>
+            <span class="page-button">1 and 2</span>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <span class="text-black">of 37</span>
+          <span class="text-black total-pages">of 37</span>
         </div>
       </div>
 
