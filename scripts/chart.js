@@ -9,6 +9,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 4.3, 70.3, 30.3, 70.3, 60.3, 95.3],
         fill: false,
         borderColor: "#FC714D",
+        backgroundColor: "#FC714D", // Add backgroundColor for the tooltip
         tension: 0.1,
       },
       {
@@ -16,6 +17,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 40.3, 10.3, 40.3, 70.3, 80.3, 70.3],
         fill: false,
         borderColor: "#615DE3",
+        backgroundColor: "#615DE3", // Add backgroundColor for the tooltip
         tension: 0.1,
       },
       {
@@ -23,6 +25,7 @@ const myLineChart = new Chart(ctx, {
         data: [3.3, 20.3, 40.3, 70.3, 40.3, 80.3, 90.3],
         fill: false,
         borderColor: "#AFCD80",
+        backgroundColor: "#AFCD80", // Add backgroundColor for the tooltip
         tension: 0.1,
       },
       {
@@ -30,6 +33,7 @@ const myLineChart = new Chart(ctx, {
         data: [0.2, 20.2, 30.2, 40.2, 90.2, 90.2, 100],
         fill: false,
         borderColor: "#6F34A1",
+        backgroundColor: "#6F34A1", // Add backgroundColor for the tooltip
         tension: 0.1,
       },
     ],
@@ -72,6 +76,15 @@ const myLineChart = new Chart(ctx, {
               label += context.parsed.y + "%";
             }
             return label;
+          },
+          labelColor: function (context) {
+            return {
+              borderColor: context.dataset.borderColor,
+              backgroundColor: context.dataset.backgroundColor,
+              borderWidth: 2,
+              borderRadius: 0,
+              padding: 5,
+            };
           },
         },
       },
