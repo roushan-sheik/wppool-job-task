@@ -92,6 +92,10 @@ const myLineChart = new Chart(ctx, {
     hover: {
       mode: "index",
       intersect: false,
+      animationDuration: 0, // Disable hover animation to prevent size change
+    },
+    animation: {
+      duration: 0, // Disable overall animation to prevent size change
     },
   },
 });
